@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Request prmissions resultApi</string>
+    <string name="str_multiple_permissions">single Permissions</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiBtCheckPermissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_multiple_permissions"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiBtTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="take picture"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/uiBtCheckPermissions"
+        app:layout_constraintEnd_toEndOf="@+id/uiBtCheckPermissions"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtCheckPermissions"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiBtGetPhotoFromGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="open File"
+        app:layout_constraintEnd_toEndOf="@+id/uiBtTakePicture"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/uiBtTakePicture"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtTakePicture" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvUserPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/uiBtGetPhotoFromGallery"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/uiBtGetPhotoFromGallery"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtGetPhotoFromGallery"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
