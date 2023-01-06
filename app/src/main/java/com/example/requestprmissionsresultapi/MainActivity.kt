@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    /* request to write internal storage and get picture */
+    /* request to write internal storage and get picture fgsfdgs */
 
     val requestGetPicture by lazy {
         registerForActivityResult(
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
 //                    Manifest.permission.READ_EXTERNAL_STORAGE,
 //
 //                    Manifest.permission.ACCESS_COARSE_LOCATION,
-//                    Manifest.permission.CAMERA jkjjjlkjkljkljkl
+//                    Manifest.permission.CAMERA jkjjjlkjkljkljklvczxvc
 //                )
 //            )
 //        }
